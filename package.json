@@ -10,7 +10,7 @@
     "email": "trevor@planet.com",
     "name": "Trevor Blades"
   },
-  "description": "Stylesheet reset and Planet style overrides.",
+  "description": "Stylesheet reset and Planet style overrides",
   "devDependencies": {
     "browser-sync": "^2.9.11",
     "eslint": "^1.8.0",
