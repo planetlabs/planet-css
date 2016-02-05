@@ -1,0 +1,27 @@
+{
+  "name": "planet-css",
+  "version": "0.4.4",
+  "scripts": {
+    "dist": "gulp dist",
+    "prepublish": "npm run dist",
+    "start": "gulp dev"
+  },
+  "author": {
+    "email": "trevor@planet.com",
+    "name": "Trevor Blades"
+  },
+  "description": "Stylesheet reset and Planet style overrides.",
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "eslint": "^1.8.0",
+    "eslint-config-planet": "^4.0.0",
+    "gulp": "^3.9.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-less": "^3.0.3",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "normalize-css": "^2.3.1"
+  }
+}

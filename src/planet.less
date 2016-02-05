@@ -1,0 +1,103 @@
+// Font families
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700|Inconsolata:400,700');
+@font-family-sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
+@font-family-monospace: 'Inconsolata', 'Courier New', Courier, monospace;
+
+// Gray variables
+@gray-lightest: #fafafa;
+@gray-lighter: #e1e1e1;
+@gray-light: #c1c1c1;
+@gray: #777;
+@gray-dark: #424242;
+@gray-darker: #303030;
+
+// Colour variables
+@brand-primary: #0090D5;
+@brand-primary-dark: #006999;
+@brand-primary-darker: #00344d;
+@brand-success: #00ad4b;
+@brand-warning: #ffce00;
+@brand-error: #f33300;
+
+// Border radii
+@border-radius-small: 2px;
+@border-radius-large: 4px;
+
+// Global rules
+body {
+  font-family: @font-family-sans-serif;
+  color: @gray-darker;
+  background-color: white;
+}
+
+// Text elements
+h1, h2, h3, h4, h5, p, li {
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+h1, h2, h3, h4, h5 {
+  line-height: 1.25em;
+}
+h1, h2 {
+  font-weight: 300;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 20px;
+}
+h3, h4, h5, p {
+  font-weight: 400;
+}
+h3, p, li {
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px;
+}
+h5 {
+  font-size: 12px;
+}
+p, li {
+  line-height: 1.5em;
+}
+
+button {
+  display: inline-block;
+  vertical-align: top;
+  height: 32px;
+  padding: 0 16px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: @border-radius-small;
+  font-size: 16px;
+  line-height: 1.25em;
+  color: @gray-lightest;
+  text-transform: uppercase;
+  background-color: @brand-primary;
+  outline: none;
+  &:hover {
+    background-color: darken(@brand-primary, 5%);
+  }
+  &.pl-large {
+    height: 40px;
+  }
+  &.pl-secondary {
+    border: 1px solid @brand-primary;
+    color: @brand-primary;
+    background-color: @gray-lightest;
+    &:hover {
+      background-color: darken(@gray-lightest, 5%);
+    }
+  }
+  &.pl-disabled {
+    background-color: @gray-lighter;
+    cursor: default;
+  }
+}
