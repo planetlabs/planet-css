@@ -23,6 +23,9 @@
 @border-radius-small: 2px;
 @border-radius-large: 4px;
 
+// Font sizes
+@font-size-base: 18px;
+
 // Global rules
 body {
   font-family: @font-family-sans-serif;
@@ -31,41 +34,45 @@ body {
 }
 
 // Text elements
-h1, h2, h3, h4, h5, p, li {
-  a {
-    text-decoration: underline;
-    cursor: pointer;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
 h1, h2, h3, h4, h5 {
   line-height: 1.25em;
 }
-h1, h2 {
+h1, h2, h3 {
   font-weight: 300;
 }
 h1 {
-  font-size: 36px;
+  font-size: @font-size-base * 3;
 }
 h2 {
-  font-size: 20px;
+  font-size: @font-size-base * 2.5;
 }
-h3, h4, h5, p {
+h4, h6, p {
   font-weight: 400;
 }
-h3, p, li {
-  font-size: 16px;
+h3 {
+  font-size: @font-size-base * 2;
 }
 h4 {
-  font-size: 14px;
+  font-size: @font-size-base * 1.5;
 }
-h5 {
-  font-size: 12px;
+h5, p, li {
+  font-size: @font-size-base;
 }
 p, li {
   line-height: 1.5em;
+}
+h6 {
+  font-size: @font-size-base * 0.75;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 button {
