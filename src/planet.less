@@ -4,17 +4,17 @@
 @font-family-monospace: 'Inconsolata', 'Courier New', Courier, monospace;
 
 // Gray variables
-@gray-lightest: #fafafa;
-@gray-lighter: #e1e1e1;
-@gray-light: #c1c1c1;
-@gray: #777;
-@gray-dark: #424242;
-@gray-darker: #303030;
+@gray-lightest: darken(white, 5%);
+@gray-lighter: darken(white, 10%);
+@gray-light: darken(white, 20%);
+@gray: darken(white, 40%);
+@gray-dark: darken(white, 60%);
+@gray-darker: darken(white, 90%);
 
 // Colour variables
 @brand-primary: #0090D5;
-@brand-primary-dark: #006999;
-@brand-primary-darker: #00344d;
+@brand-primary-dark: darken(@brand-primary, 5%);
+@brand-primary-darker: darken(@brand-primary, 10%);
 @brand-success: #00ad4b;
 @brand-warning: #ffce00;
 @brand-error: #f33300;
