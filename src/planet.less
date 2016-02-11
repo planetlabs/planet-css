@@ -108,3 +108,17 @@ button {
     cursor: default;
   }
 }
+
+pre, code {
+  font-family: @font-family-monospace;
+}
+pre {
+  padding: 1em 1.5em;
+  border-left: 1px solid @gray;
+  background-color: @gray-lighter;
+}
+:not(pre) > code {
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+  background-color: @gray-lightest;
+}
