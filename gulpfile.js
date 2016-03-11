@@ -10,6 +10,7 @@ var gutil = require('gulp-util');
 
 var SRC_DIR = './src/';
 var BUILD_DIR = './build/';
+var DIST_DIR = './dist/';
 
 /**
  * Tasks for generating markup and stylesheets in development/debug mode.
@@ -64,7 +65,7 @@ gulp.task('dev', ['dev-serve'], function() {
 gulp.task('dist', function() {
   gulp.src(SRC_DIR + 'planet.less')
       .pipe(insert.prepend(normalize))
-      .pipe(gulp.dest(BUILD_DIR))
+      .pipe(gulp.dest(DIST_DIR))
       .pipe(less({
         relativeUrls: true,
         plugins: [new LessPluginAutoPrefix(), new LessPluginCleanCSS()]
@@ -73,5 +74,5 @@ gulp.task('dist', function() {
         gutil.log('LESS compilation failed: ' + err.message);
         process.exit(1);
       })
-      .pipe(gulp.dest(BUILD_DIR));
+      .pipe(gulp.dest(DIST_DIR));
 });
