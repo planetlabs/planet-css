@@ -1,16 +1,17 @@
 {
   "name": "planet-css",
-  "version": "0.4.4",
+  "version": "0.5.1",
+  "description": "Stylesheet reset and Planet style overrides",
+  "repository": "https://github.com/planetlabs/planet-css",
+  "author": {
+    "email": "trevor@planet.com",
+    "name": "Trevor Blades"
+  },
   "scripts": {
     "dist": "gulp dist",
     "prepublish": "npm run dist",
     "start": "gulp dev"
   },
-  "author": {
-    "email": "trevor@planet.com",
-    "name": "Trevor Blades"
-  },
-  "description": "Stylesheet reset and Planet style overrides",
   "devDependencies": {
     "browser-sync": "^2.9.11",
     "eslint": "^1.8.0",
