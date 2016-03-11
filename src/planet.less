@@ -1,5 +1,5 @@
 // Font families
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700|Inconsolata:400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Inconsolata:400,700');
 @font-family-sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
 @font-family-monospace: 'Inconsolata', 'Courier New', Courier, monospace;
 
@@ -76,34 +76,53 @@ a {
 button {
   display: inline-block;
   vertical-align: top;
-  height: 32px;
-  padding: 0 16px;
-  border: none;
+  height: 36px;
+  padding: 0 18px;
+  border: 1px solid @gray-darker;
   box-sizing: border-box;
   border-radius: @border-radius-small;
   font-size: 16px;
-  line-height: 1.25em;
-  color: @gray-lightest;
-  text-transform: uppercase;
-  background-color: @brand-primary;
+  line-height: 36px - 1;
+  font-weight: 600;
+  color: @gray-darker;
+  background-color: transparent;
   outline: none;
   &:hover {
-    background-color: darken(@brand-primary, 5%);
+    background-color: fade(@gray-darker, 10%);
   }
-  &.pl-large {
-    height: 40px;
+  &:active {
+    background-color: fade(@gray-darker, 20%);
+  }
+  &.pl-small {
+    height: 32px;
+    line-height: 32px - 1;
+  }
+  &.pl-primary {
+    border-color: @brand-primary;
+    color: @brand-primary;
+    &:hover {
+      background-color: fade(@brand-primary, 10%);
+    }
+    &:active {
+      background-color: fade(@brand-primary, 20%);
+    }
   }
   &.pl-secondary {
-    border: 1px solid @brand-primary;
-    color: @brand-primary;
-    background-color: @gray-lightest;
+    border-color: @gray-lightest;
+    color: @gray-lightest;
     &:hover {
-      background-color: darken(@gray-lightest, 5%);
+      background-color: fade(@gray-lightest, 10%);
+    }
+    &:active {
+      background-color: fade(@gray-lightest, 20%);
     }
   }
   &.pl-disabled {
-    background-color: @gray-lighter;
+    opacity: 0.5;
     cursor: default;
+    &:hover, &:active {
+      background-color: transparent;
+    }
   }
 }
 
