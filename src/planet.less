@@ -30,6 +30,7 @@
 // Global rules
 body {
   font-family: @font-family-sans-serif;
+  font-size: @font-size-base;
   color: @gray-darker;
   background-color: white;
 }
@@ -42,28 +43,28 @@ h1, h2, h3 {
   font-weight: 300;
 }
 h1 {
-  font-size: @font-size-base * 3.5;
+  font-size: 3.5em;
 }
 h2 {
-  font-size: @font-size-base * 3;
+  font-size: 3em;
 }
 h4, h5, h6, p {
   font-weight: 400;
 }
 h3 {
-  font-size: @font-size-base * 2;
+  font-size: 2em;
 }
 h4 {
-  font-size: @font-size-base * 1.5;
+  font-size: 1.5em;
 }
 h5, p, li {
-  font-size: @font-size-base;
+  font-size: 1em;
 }
 p, li {
   line-height: 1.5em;
 }
 h6 {
-  font-size: @font-size-base * 0.75;
+  font-size: 0.75em;
   line-height: 1em / 0.75;
 }
 a {
@@ -78,13 +79,13 @@ a {
 button {
   display: inline-block;
   vertical-align: top;
-  height: 36px;
-  padding: 0 18px;
+  height: 2.25em;
+  padding: 0 1.125em;
   border: 1px solid @gray-darker;
   box-sizing: border-box;
   border-radius: @border-radius-small;
-  font-size: 16px;
-  line-height: 36px - 1;
+  font-size: 1em;
+  line-height: 2.25em - 1px;
   font-weight: 600;
   color: @gray-darker;
   background-color: transparent;
@@ -96,14 +97,14 @@ button {
     background-color: fade(@gray-darker, 10%);
   }
   &.pl-small {
-    height: 32px;
-    line-height: 32px - 1;
+    height: 2em;
+    line-height: 2em - 1px;
   }
   &.pl-large {
-    padding: 0 36px;
-    height: 54px;
-    font-size: 20px;
-    line-height: 54px - 1;
+    padding: 0 2.25em;
+    height: 3.375em;
+    font-size: 1.25em;
+    line-height: 3.375em - 1px;
   }
   &.pl-primary {
     border-color: @brand-primary;
