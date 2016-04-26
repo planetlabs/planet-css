@@ -3,6 +3,25 @@
 @font-family-sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
 @font-family-monospace: 'Inconsolata', 'Courier New', Courier, monospace;
 
+// Font sizes
+@font-size-base: 16px;
+@font-size-small: 0.875em;
+
+// Common layout sizes
+@padding-base: 1.125em;
+@padding-small: @padding-base / 1.5; // 0.75em
+@padding-xsmall: @padding-small / 1.5; // 0.5em
+@padding-xxsmall: @padding-xsmall / 2; // 0.25em
+@padding-large: @padding-base / 0.75; // 1.5em
+@padding-xlarge: @padding-large * 1.5; // 2.25em
+@padding-xxlarge: @padding-xlarge / 0.75; // 3em
+
+// Faded blacks
+@black-faded: fade(black, 50%);
+@black-faded-dark: fade(black, 80%);
+@black-faded-darker: fade(black, 90%);
+@black-faded-gradient: linear-gradient(0deg, @black-faded-dark, @black-faded-darker);
+
 // Gray variables
 @gray-lightest: darken(white, 5%);
 @gray-lighter: darken(white, 10%);
@@ -24,9 +43,14 @@
 @border-radius-small: 2px;
 @border-radius-large: 4px;
 
-// Font sizes
-@font-size-base: 16px;
-@font-size-small: 0.875em;
+// Box shadows
+@box-shadow-small: 0 0 1px @black-faded-dark;
+@box-shadow-large: @box-shadow-small, 0 2px 6px @black-faded;
+
+// CSS transition durations
+@transition-duration-fast: 150ms;
+@transition-duration-medium: 250ms;
+@transition-duration-slow: @transition-duration-fast + @transition-duration-medium;
 
 // Global rules
 body {
