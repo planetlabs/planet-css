@@ -53,6 +53,9 @@
 @transition-duration-slow: @transition-duration-fast + @transition-duration-medium;
 
 // Global rules
+html, *, *:before, *:after {
+  box-sizing: border-box;
+}
 body {
   font-family: @font-family-sans-serif;
   font-size: @font-size-base;
