@@ -107,8 +107,8 @@ a {
 .pl-button, button {
   display: inline-block;
   vertical-align: top;
-  line-height: 2.25em;
-  padding: 0 1.125em;
+  line-height: @padding-xlarge;
+  padding: 0 @padding-base;
   border: 1px solid @gray-darker;
   box-sizing: border-box;
   border-radius: @border-radius-small;
@@ -125,11 +125,12 @@ a {
     background-color: fade(@gray-darker, 10%);
   }
   &.pl-small {
+    padding: 0 @padding-small;
     font-size: @font-size-small;
     line-height: 1.9em;
   }
   &.pl-large {
-    padding: 0 2.25em;
+    padding: 0 @padding-xlarge;
     font-size: 1.25em;
     line-height: 3.375em;
   }
@@ -166,7 +167,7 @@ pre, code {
   font-family: @font-family-monospace;
 }
 pre {
-  padding: 1em 1.5em;
+  padding: 1em @padding-large;
   border-left: 1px solid @gray;
   background-color: @gray-lighter;
 }
