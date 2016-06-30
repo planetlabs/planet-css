@@ -134,6 +134,17 @@ a {
     font-size: 1.25em;
     line-height: 3.375em;
   }
+  &.pl-filled {
+    border: none;
+    color: @gray-lightest;
+    background-color: @gray-darker;
+    &:hover {
+      background-color: @gray-darker;
+    }
+    &:active {
+      background-color: lighten(@gray-darker, 5%);
+    }
+  }
   &.pl-primary {
     border-color: @brand-primary;
     color: @brand-primary;
@@ -142,6 +153,16 @@ a {
     }
     &:active {
       background-color: fade(@brand-primary, 10%);
+    }
+    &.pl-filled {
+      color: @gray-lightest;
+      background-color: @brand-primary;
+      &:hover {
+        background-color: @brand-primary;
+      }
+      &:active {
+        background-color: darken(@brand-primary, 5%);
+      }
     }
   }
   &.pl-secondary {
@@ -152,6 +173,16 @@ a {
     }
     &:active {
       background-color: fade(@gray-lightest, 10%);
+    }
+    &.pl-filled {
+      color: @gray-darker;
+      background-color: @gray-lightest;
+      &:hover {
+        background-color: @gray-lightest;
+      }
+      &:active {
+        background-color: darken(@gray-lightest, 5%);
+      }
     }
   }
   &.pl-disabled {
