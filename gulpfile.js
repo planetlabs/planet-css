@@ -8,8 +8,8 @@ var normalize = require('normalize-css/normalize');
 
 var LIB_DIR = './lib/';
 
-gulp.task('default', function() {
-  gulp.src('./main.less')
+gulp.task('main', function() {
+  return gulp.src('./main.less')
     .pipe(insert.prepend(normalize))
     .pipe(gulp.dest(LIB_DIR))
     .pipe(less({
@@ -22,3 +22,9 @@ gulp.task('default', function() {
     })
     .pipe(gulp.dest(LIB_DIR));
 });
+
+gulp.task('variables', function() {
+  return gulp.src('./variables.less').pipe(gulp.dest(LIB_DIR));
+});
+
+gulp.task('default', ['main', 'variables']);
