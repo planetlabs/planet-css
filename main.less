@@ -52,6 +52,32 @@ a {
     text-decoration: none;
   }
 }
+label {
+  display: block;
+  font-size: @font-size-small;
+}
+pre, code {
+  font-family: @font-family-monospace;
+}
+pre {
+  padding: @padding-base @padding-large;
+  border-left: 1px solid @gray;
+  background-color: @gray-lighter;
+}
+:not(pre) > code {
+  padding: @padding-smallest @padding-smaller;
+  background-color: @gray-lightest;
+}
+
+// Useful classes
+.pl-clear {
+  clear: both;
+}
+.pl-spaced {
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
 
 // Button styles
 .pl-button, button {
@@ -144,17 +170,4 @@ a {
       background-color: transparent;
     }
   }
-}
-
-pre, code {
-  font-family: @font-family-monospace;
-}
-pre {
-  padding: @padding-base @padding-large;
-  border-left: 1px solid @gray;
-  background-color: @gray-lighter;
-}
-:not(pre) > code {
-  padding: @padding-smallest @padding-smaller;
-  background-color: @gray-lightest;
 }
