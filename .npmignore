@@ -1,1 +1,3 @@
-src
+/main.less
+/variables.less
+/gulpfile.js
