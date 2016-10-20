@@ -48,7 +48,7 @@ a {
   color: inherit;
   text-decoration: underline;
   cursor: pointer;
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
   }
 }
@@ -94,7 +94,7 @@ pre {
   text-decoration: none;
   background-color: transparent;
   outline: none;
-  &:hover {
+  &:hover, &:focus {
     background-color: fade(@gray-darker, 5%);
   }
   &:active {
@@ -114,7 +114,7 @@ pre {
     box-shadow: none;
     color: @gray-lightest;
     background-color: @gray-darker;
-    &:hover {
+    &:hover, &:focus {
       background-color: @gray-darker;
     }
     &:active {
@@ -124,7 +124,7 @@ pre {
   &.pl-primary {
     box-shadow: inset 0 0 0 1px @brand-primary;
     color: @brand-primary;
-    &:hover {
+    &:hover, &:focus {
       background-color: fade(@brand-primary, 5%);
     }
     &:active {
@@ -133,7 +133,7 @@ pre {
     &.pl-filled {
       color: @gray-lightest;
       background-color: @brand-primary;
-      &:hover {
+      &:hover, &:focus {
         background-color: @brand-primary;
       }
       &:active {
@@ -144,7 +144,7 @@ pre {
   &.pl-secondary {
     box-shadow: inset 0 0 0 1px @gray-lightest;
     color: @gray-lightest;
-    &:hover {
+    &:hover, &:focus {
       background-color: fade(@gray-lightest, 5%);
     }
     &:active {
@@ -153,7 +153,7 @@ pre {
     &.pl-filled {
       color: @gray-darker;
       background-color: @gray-lightest;
-      &:hover {
+      &:hover, &:focus {
         background-color: @gray-lightest;
       }
       &:active {
@@ -167,7 +167,7 @@ pre {
   &.pl-disabled {
     opacity: 0.5;
     cursor: default;
-    &:hover, &:active {
+    &:hover, &:focus, &:active {
       background-color: transparent;
     }
   }
