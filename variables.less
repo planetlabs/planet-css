@@ -16,18 +16,24 @@
 @padding-larger: @padding-large * 1.5; // 2.25rem
 @padding-largest: @padding-larger / 0.75; // 3rem
 
-// Faded blacks
-@black-faded: fade(black, 50%);
-@black-faded-dark: fade(black, 80%);
-@black-faded-darker: fade(black, 90%);
-
 // Grays
-@gray-lightest: darken(white, 5%);
-@gray-lighter: darken(white, 10%);
-@gray-light: darken(white, 20%);
-@gray: darken(white, 40%);
-@gray-dark: darken(white, 60%);
-@gray-darker: darken(white, 90%);
+@gray-darkest: lighten(black, 5%);
+@gray-darker: lighten(black, 10%);
+@gray-dark: lighten(black, 15%);
+@gray: lighten(black, 20%);
+@gray-light: lighten(black, 30%);
+@gray-lighter: lighten(black, 45%);
+@gray-lightest: lighten(black, 70%);
+
+// Shadows
+@shadow-light: fade(black, 10%);
+@shadow: fade(black, 20%);
+@shadow-dark: fade(black, 50%);
+
+// Highlights
+@highlight-light: fade(white, 5%);
+@highlight: fade(white, 10%);
+@highlight-dark: fade(white, 25%);
 
 // Color variables
 @brand-primary: #009da5;
