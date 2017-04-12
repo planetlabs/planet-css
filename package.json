@@ -1,5 +1,5 @@
 {
-  "name": "planet-css",
+  "name": "@planet/css",
   "version": "1.1.1",
   "description": "Stylesheet reset and Planet style overrides",
   "repository": "https://github.com/planetlabs/planet-css",
